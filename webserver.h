@@ -33,7 +33,7 @@ public:
     void sql_pool();
     void log_write();
     void trig_mode();
-    void eventListen();
+    bool eventListen();
     void eventLoop();
     void timer(int connfd, struct sockaddr_in client_address);
     void adjust_timer(util_timer *timer);

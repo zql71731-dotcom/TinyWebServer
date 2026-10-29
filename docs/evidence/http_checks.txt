@@ -1,0 +1,14 @@
+== 默认端口配置 ==
+5:    PORT = 9006;
+44:            PORT = atoi(optarg);
+== /hello ==
+{"msg":"ok"}
+ [HTTP 200]
+== /hello.html ==
+{"msg":"ok"}
+ [HTTP 200]
+== / (回归) ==
+[HTTP 200]
+== /nope.html (404 修复后) ==
+The requested file was not found on this server.
+ [HTTP 404]

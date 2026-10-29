@@ -7,8 +7,11 @@ WebServer::WebServer()
 
     //root文件夹路径
     char server_path[200];
+    //获取当前工作目录
     getcwd(server_path, 200);
+    //root文件夹路径为当前工作目录下的/root
     char root[6] = "/root";
+    //为root文件夹路径分配内存空间，并将其与当前工作目录拼接
     m_root = (char *)malloc(strlen(server_path) + strlen(root) + 1);
     strcpy(m_root, server_path);
     strcat(m_root, root);
@@ -19,6 +22,8 @@ WebServer::WebServer()
 
 WebServer::~WebServer()
 {
+    //关闭服务器，释放资源
+    //关闭epoll文件描述符、监听套接字、管道文件描述符
     close(m_epollfd);
     close(m_listenfd);
     close(m_pipefd[1]);
@@ -100,11 +105,15 @@ void WebServer::thread_pool()
     m_pool = new threadpool<http_conn>(m_actormodel, m_connPool, m_thread_num);
 }
 
-void WebServer::eventListen()
+bool WebServer::eventListen()
 {
     //网络编程基础步骤
     m_listenfd = socket(PF_INET, SOCK_STREAM, 0);
-    assert(m_listenfd >= 0);
+    if (m_listenfd < 0)
+    {
+        perror("socket failed");
+        return false;
+    }
 
     //优雅关闭连接
     if (0 == m_OPT_LINGER)
@@ -128,9 +137,17 @@ void WebServer::eventListen()
     int flag = 1;
     setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
     ret = bind(m_listenfd, (struct sockaddr *)&address, sizeof(address));
-    assert(ret >= 0);
+    if (ret < 0)
+    {
+        perror("bind failed");
+        return false;
+    }
     ret = listen(m_listenfd, 5);
-    assert(ret >= 0);
+    if (ret < 0)
+    {
+        perror("listen failed");
+        return false;
+    }
 
     utils.init(TIMESLOT);
 
@@ -156,6 +173,8 @@ void WebServer::eventListen()
     //工具类,信号和描述符基础操作
     Utils::u_pipefd = m_pipefd;
     Utils::u_epollfd = m_epollfd;
+
+    return true;
 }
 
 void WebServer::timer(int connfd, struct sockaddr_in client_address)
@@ -326,6 +345,7 @@ void WebServer::dealwithread(int sockfd)
             deal_timer(timer, sockfd);
         }
     }
+    fprintf(stderr, "[READ ] fd=%d\n", sockfd);
 }
 
 void WebServer::dealwithwrite(int sockfd)
@@ -372,6 +392,7 @@ void WebServer::dealwithwrite(int sockfd)
             deal_timer(timer, sockfd);
         }
     }
+    fprintf(stderr, "[WRITE] fd=%d\n", sockfd);
 }
 
 void WebServer::eventLoop()

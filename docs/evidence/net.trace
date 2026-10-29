@@ -1,0 +1,283 @@
+6     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9c1069000
+6     openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=63843, ...}) = 0
+6     mmap(NULL, 63843, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71c9c1059000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libmysqlclient.so.24", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=6823832, ...}) = 0
+6     mmap(NULL, 6829952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c0800000
+6     mmap(0x71c9c0827000, 569344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x71c9c0827000
+6     mmap(0x71c9c08b2000, 2994176, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x71c9c08b2000
+6     mmap(0x71c9c0b8d000, 3104768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x38c000) = 0x71c9c0b8d000
+6     mmap(0x71c9c0e83000, 1920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71c9c0e83000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=2735712, ...}) = 0
+6     mmap(NULL, 2749504, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c0400000
+6     mmap(0x71c9c04a3000, 1421312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa3000) = 0x71c9c04a3000
+6     mmap(0x71c9c05fe000, 573440, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x71c9c05fe000
+6     mmap(0x71c9c068a000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28a000) = 0x71c9c068a000
+6     mmap(0x71c9c069c000, 13376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71c9c069c000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=187120, ...}) = 0
+6     mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c102b000
+6     mmap(0x71c9c102f000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71c9c102f000
+6     mmap(0x71c9c1053000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71c9c1053000
+6     mmap(0x71c9c1057000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x71c9c1057000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+6     pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+6     fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+6     pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+6     mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c0000000
+6     mmap(0x71c9c0028000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x71c9c0028000
+6     mmap(0x71c9c01c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x71c9c01c0000
+6     mmap(0x71c9c020e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x71c9c020e000
+6     mmap(0x71c9c0214000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71c9c0214000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=1114280, ...}) = 0
+6     mmap(NULL, 1116136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c0f1a000
+6     mmap(0x71c9c0f3c000, 733184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x71c9c0f3c000
+6     mmap(0x71c9c0fef000, 188416, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd5000) = 0x71c9c0fef000
+6     mmap(0x71c9c101d000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x71c9c101d000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=6386528, ...}) = 0
+6     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9c0f18000
+6     mmap(NULL, 6397112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9bf800000
+6     mmap(0x71c9bf8e4000, 3751936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x71c9bf8e4000
+6     mmap(0x71c9bfc78000, 1175552, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x478000) = 0x71c9bfc78000
+6     mmap(0x71c9bfd97000, 524288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x597000) = 0x71c9bfd97000
+6     mmap(0x71c9bfe17000, 11448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71c9bfe17000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=68104, ...}) = 0
+6     mmap(NULL, 75912, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c0f05000
+6     mmap(0x71c9c0f08000, 40960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71c9c0f08000
+6     mmap(0x71c9c0f12000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x71c9c0f12000
+6     mmap(0x71c9c0f14000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x71c9c0f14000
+6     mmap(0x71c9c0f16000, 6280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71c9c0f16000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=121272, ...}) = 0
+6     mmap(NULL, 118936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c0ee7000
+6     mmap(0x71c9c0eea000, 77824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x71c9c0eea000
+6     mmap(0x71c9c0efd000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x71c9c0efd000
+6     mmap(0x71c9c0f03000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x71c9c0f03000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=796824, ...}) = 0
+6     mmap(NULL, 794672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c073d000
+6     mmap(0x71c9c0741000, 720896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x71c9c0741000
+6     mmap(0x71c9c07f1000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb4000) = 0x71c9c07f1000
+6     mmap(0x71c9c07fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc1000) = 0x71c9c07fe000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+6     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=1198376, ...}) = 0
+6     mmap(NULL, 1200152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71c9c02da000
+6     mmap(0x71c9c02ec000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x71c9c02ec000
+6     mmap(0x71c9c038c000, 466944, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x71c9c038c000
+6     mmap(0x71c9c03fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x123000) = 0x71c9c03fe000
+6     close(3)                          = 0
+6     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9c0ee5000
+6     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9c0ee3000
+6     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9c0ee1000
+6     mmap(NULL, 259526656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9b007f000
+6     mmap(NULL, 2101248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71c9afe7e000
+6     openat(AT_FDCWD, "/proc/sys/crypto/fips_enabled", O_RDONLY) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/etc/ubuntu-fips", O_RDONLY) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/usr/lib/ssl/openssl.cnf", O_RDONLY) = 3
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=12509, ...}) = 0
+6     read(3, "#\n# OpenSSL example configuratio"..., 4096) = 4096
+6     read(3, "d attributes must be the same, a"..., 4096) = 4096
+6     read(3, "coding of an extension: beware e"..., 4096) = 4096
+6     read(3, "cert = $insta::certout # insta.c"..., 4096) = 221
+6     newfstatat(AT_FDCWD, "/var/lib/crypto-config/profiles/current/openssl.conf.d", 0x7fff257e73d0, 0) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/etc/ssl/openssl.conf.d", 0x7fff257e73d0, 0) = -1 ENOENT (No such file or directory)
+6     read(3, "", 4096)                 = 0
+6     close(3)                          = 0
+6     socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+6     connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+6     close(3)                          = 0
+6     socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+6     connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+6     close(3)                          = 0
+6     newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=594, ...}, 0) = 0
+6     newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+6     openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=594, ...}) = 0
+6     read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 594
+6     read(3, "", 4096)                 = 0
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=594, ...}) = 0
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=63843, ...}) = 0
+6     mmap(NULL, 63843, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71c9c1059000
+6     close(3)                          = 0
+6     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=81920, ...}, 0) = 0
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/", {st_mode=S_IFDIR|0755, st_size=81920, ...}, 0) = 0
+6     openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/lib/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+6     openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/", 0x7fff257e66e0, 0) = -1 ENOENT (No such file or directory)
+6     openat(AT_FDCWD, "/usr/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6     newfstatat(AT_FDCWD, "/usr/lib/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+6     openat(AT_FDCWD, "/etc/services", O_RDONLY|O_CLOEXEC) = 3
+6     fstat(3, {st_mode=S_IFREG|0644, st_size=12990, ...}) = 0
+6     lseek(3, 0, SEEK_SET)             = 0
+6     read(3, "# Network services, Internet sty"..., 4096) = 4096
+6     read(3, "\ntinc\t\t655/tcp\t\t\t\t# tinc control"..., 4096) = 4096
+6     lseek(3, 6707, SEEK_SET)          = 6707
+6     close(3)                          = 0
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 3
+6     connect(3, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(3, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0000\0\0"..., 16384, 0, NULL, NULL) = 95
+6     newfstatat(AT_FDCWD, "/usr/share/mysql/charsets/Index.xml", {st_mode=S_IFREG|0644, st_size=19525, ...}, 0) = 0
+6     openat(AT_FDCWD, "/usr/share/mysql/charsets/Index.xml", O_RDONLY) = 4
+6     read(4, "<?xml version='1.0' encoding=\"ut"..., 19525) = 19525
+6     close(4)                          = 0
+6     sendto(3, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(3, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(3, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 4
+6     connect(4, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(4, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(4, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(4, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0001\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(4, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(4, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(4, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 5
+6     connect(5, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(5, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(5, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(5, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0002\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(5, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(5, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(5, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 6
+6     connect(6, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(6, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(6, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(6, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0003\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(6, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(6, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(6, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 7
+6     connect(7, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(7, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(7, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(7, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0004\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(7, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(7, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(7, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 8
+6     connect(8, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(8, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(8, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(8, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0005\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(8, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(8, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(8, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 9
+6     connect(9, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(9, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0006\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(9, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(9, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(9, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     socket(AF_UNIX, SOCK_STREAM, 0)   = 10
+6     connect(10, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+6     setsockopt(10, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (Operation not supported)
+6     setsockopt(10, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+6     recvfrom(10, "[\0\0\0\n8.4.11-0ubuntu0.26.04.1\0007\0\0"..., 16384, 0, NULL, NULL) = 95
+6     sendto(10, "\262\0\0\1\215\242\276\31\0\0\0@\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 182, 0, NULL, 0) = 182
+6     recvfrom(10, "\2\0\0\2\1\3", 16384, 0, NULL, NULL) = 6
+6     recvfrom(10, "\22\0\0\3\0\0\0\2@\0\0\0\t\1\7\6yourdb", 16384, 0, NULL, NULL) = 22
+6     sendto(3, "#\0\0\0\3\0\1SELECT username,passwd FR"..., 39, 0, NULL, 0) = 39
+6     recvfrom(3, "\1\0\0\1\0024\0\0\2\3def\6yourdb\4user\4user\10u"..., 16384, 0, NULL, NULL) = 148
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9af67d000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9aee7c000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9ae67b000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9ade7a000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9ad679000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9ace78000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9ac677000
+6     mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x71c9abe76000
+6     socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 11
+6     setsockopt(11, SOL_SOCKET, SO_LINGER, {l_onoff=0, l_linger=1}, 8) = 0
+6     setsockopt(11, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+6     bind(11, {sa_family=AF_INET, sin_port=htons(9091), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+6     listen(11, 5)                     = 0
+6     epoll_create(5)                   = 12
+6     epoll_ctl(12, EPOLL_CTL_ADD, 11, {events=EPOLLIN|EPOLLRDHUP, data=0x50000000b}) = 0
+6     fcntl(11, F_GETFL)                = 0x2 (flags O_RDWR)
+6     fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+6     socketpair(AF_UNIX, SOCK_STREAM, 0, [13, 14]) = 0
+6     fcntl(14, F_GETFL)                = 0x2 (flags O_RDWR)
+6     fcntl(14, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+6     epoll_ctl(12, EPOLL_CTL_ADD, 13, {events=EPOLLIN|EPOLLRDHUP, data=0x50000000d}) = 0
+6     fcntl(13, F_GETFL)                = 0x2 (flags O_RDWR)
+6     fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+6     epoll_wait(12, [{events=EPOLLIN, data=0x50000000b}], 10000, -1) = 1
+6     accept(11, {sa_family=AF_INET, sin_port=htons(34186), sin_addr=inet_addr("127.0.0.1")}, [16]) = 15
+6     epoll_ctl(12, EPOLL_CTL_ADD, 15, {events=EPOLLIN|EPOLLRDHUP|EPOLLONESHOT, data=0x7fff0000000f}) = 0
+6     fcntl(15, F_GETFL)                = 0x2 (flags O_RDWR)
+6     fcntl(15, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+6     epoll_wait(12, [{events=EPOLLIN, data=0x7fff0000000f}], 10000, -1) = 1
+6     recvfrom(15, "GET / HTTP/1.1\r\nHost: 127.0.0.1:"..., 2048, 0, NULL, NULL) = 78
+6     write(2, "[READ ] fd=15\n", 14 <unfinished ...>
+7     mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+6     <... write resumed>)              = 14
+7     <... mmap resumed>)               = 0x71c9a3e00000
+6     epoll_wait(12 <unfinished ...>
+7     newfstatat(AT_FDCWD, "/home/zql/workspace/projects/TinyWebServer/root/judge.html", {st_mode=S_IFREG|0664, st_size=586, ...}, 0) = 0
+7     openat(AT_FDCWD, "/home/zql/workspace/projects/TinyWebServer/root/judge.html", O_RDONLY) = 16
+7     mmap(NULL, 586, PROT_READ, MAP_PRIVATE, 16, 0) = 0x71c9c1068000
+7     close(16)                         = 0
+7     epoll_ctl(12, EPOLL_CTL_MOD, 15, {events=EPOLLOUT|EPOLLRDHUP|EPOLLONESHOT, data=0x10000000f}) = 0
+6     <... epoll_wait resumed>, [{events=EPOLLOUT, data=0x10000000f}], 10000, -1) = 1
+6     writev(15, [{iov_base="HTTP/1.1 200 OK\r\nContent-Length:"..., iov_len=57}, {iov_base="<!DOCTYPE html>\n<html>\n    <head"..., iov_len=586}], 2) = 643
+6     epoll_ctl(12, EPOLL_CTL_MOD, 15, {events=EPOLLIN|EPOLLRDHUP|EPOLLONESHOT, data=0xf}) = 0
+6     epoll_ctl(12, EPOLL_CTL_DEL, 15, NULL) = 0
+6     close(15)                         = 0
+6     write(2, "[WRITE] fd=15\n", 14)   = 14
+6     epoll_wait(12 <unfinished ...>)   = ?
+12    +++ killed by SIGKILL +++
+11    +++ killed by SIGKILL +++
+10    +++ killed by SIGKILL +++
+14    +++ killed by SIGKILL +++
+9     +++ killed by SIGKILL +++
+8     +++ killed by SIGKILL +++
+7     +++ killed by SIGKILL +++

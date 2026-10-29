@@ -1,0 +1,4 @@
+bind failed: Address already in use
+===========Server start failed===========
+端口 9095 可能已被占用，或当前用户没有绑定权限。
+换个端口重试：./server -p 9090

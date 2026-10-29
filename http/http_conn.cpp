@@ -496,6 +496,11 @@ http_conn::HTTP_CODE http_conn::do_request()
 
         free(m_url_real);
     }
+    //单元 9：把 /hello 映射到静态文件 /hello.html（方案 A：URL 重写，不走文件内容构造）
+    else if (strcmp(m_url, "/hello") == 0)
+    {
+        strncpy(m_real_file + len, "/hello.html", FILENAME_LEN - len - 1);
+    }
     else
         strncpy(m_real_file + len, m_url, FILENAME_LEN - len - 1);
 
@@ -639,6 +644,7 @@ bool http_conn::process_write(HTTP_CODE ret)
         break;
     }
     case BAD_REQUEST:
+    case NO_RESOURCE:
     {
         add_status_line(404, error_404_title);
         add_headers(strlen(error_404_form));

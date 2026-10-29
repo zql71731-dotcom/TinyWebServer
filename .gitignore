@@ -1,0 +1,14 @@
+# 编译产物
+server
+*.o
+
+# 运行期日志（ServerLog 由 log 模块按日期生成）
+*_ServerLog
+logs/
+
+# 压测输出（阶段 B 生成）
+bench.txt
+server.log
+
+# 编辑器
+.vscode/
