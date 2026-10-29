@@ -12,3 +12,9 @@ server.log
 
 # 编辑器
 .vscode/
+
+# 原项目演示素材，太大，不进仓库
+root/xxx.mp4
+root/xxx.jpg
+root/picture.gif
+root/video.gif
