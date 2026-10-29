@@ -500,6 +500,7 @@ http_conn::HTTP_CODE http_conn::do_request()
     else if (strcmp(m_url, "/hello") == 0)
     {
         strncpy(m_real_file + len, "/hello.html", FILENAME_LEN - len - 1);
+        return HELLO_REQUEST;
     }
     else
         strncpy(m_real_file + len, m_url, FILENAME_LEN - len - 1);
@@ -649,6 +650,15 @@ bool http_conn::process_write(HTTP_CODE ret)
         add_status_line(404, error_404_title);
         add_headers(strlen(error_404_form));
         if (!add_content(error_404_form))
+            return false;
+        break;
+    }
+    case HELLO_REQUEST:
+    {
+        const char *body = "{\"msg\":\"ok\"}";     // ① 新加这一行
+        add_status_line(200, ok_200_title);
+        add_headers(strlen(body));                  // ② error_404_form → body
+        if (!add_content(body))                     // ③ error_404_form → body
             return false;
         break;
     }

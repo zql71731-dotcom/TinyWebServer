@@ -59,6 +59,7 @@ public:
         FORBIDDEN_REQUEST,
         FILE_REQUEST,
         INTERNAL_ERROR,
+        HELLO_REQUEST,
         CLOSED_CONNECTION
     };
     enum LINE_STATUS
