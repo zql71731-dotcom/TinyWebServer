@@ -143,7 +143,7 @@ bool WebServer::eventListen()
         perror("bind failed");
         return false;
     }
-    ret = listen(m_listenfd, 5);
+    ret = listen(m_listenfd, 128);
     if (ret < 0)
     {
         perror("listen failed");
