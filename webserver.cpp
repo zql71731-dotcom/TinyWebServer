@@ -103,7 +103,7 @@ void WebServer::sql_pool()
 void WebServer::thread_pool()
 {
     //线程池
-    m_pool = new threadpool<http_conn>(m_actormodel, m_connPool, m_thread_num);
+    m_pool = new threadpool<http_conn>(m_actormodel, m_connPool, m_thread_num, 1000);
 }
 
 bool WebServer::eventListen()
@@ -310,7 +310,11 @@ void WebServer::dealwithread(int sockfd)
         }
 
         //若监测到读事件，将该事件放入请求队列
-        m_pool->append(users + sockfd, 0);
+        if (!m_pool->append(users + sockfd, 0)) {
+            LOG_ERROR("task queue is full, close fd %d", sockfd);
+            deal_timer(timer, sockfd);
+            return;
+        }
 
         while (true)
         {
@@ -334,7 +338,12 @@ void WebServer::dealwithread(int sockfd)
             LOG_INFO("deal with the client(%s)", inet_ntoa(users[sockfd].get_address()->sin_addr));
 
             //若监测到读事件，将该事件放入请求队列
-            m_pool->append_p(users + sockfd);
+            if (!m_pool->append_p(users + sockfd))
+            {
+                LOG_ERROR("task queue is full, close fd %d", sockfd);
+                deal_timer(timer, sockfd);
+                return;
+            }
 
             if (timer)
             {
@@ -360,7 +369,12 @@ void WebServer::dealwithwrite(int sockfd)
             adjust_timer(timer);
         }
 
-        m_pool->append(users + sockfd, 1);
+        if (!m_pool->append(users + sockfd, 1))
+        {
+            LOG_ERROR("task queue is full, close fd %d", sockfd);
+            deal_timer(timer, sockfd);
+            return;
+        }
 
         while (true)
         {
