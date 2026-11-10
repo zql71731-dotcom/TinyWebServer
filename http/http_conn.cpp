@@ -407,16 +407,24 @@ http_conn::HTTP_CODE http_conn::do_request()
 
         //将用户名和密码提取出来
         //user=123&passwd=123
-        char name[100], password[100];
-        int i;
-        for (i = 5; m_string[i] != '&'; ++i)
-            name[i - 5] = m_string[i];
-        name[i - 5] = '\0';
+        char *sep = strchr(m_string, '&');
+        if (!sep)
+            return BAD_REQUEST;
 
-        int j = 0;
-        for (i = i + 10; m_string[i] != '\0'; ++i, ++j)
-            password[j] = m_string[i];
-        password[j] = '\0';
+        char name[100], password[100];
+
+        int name_len = sep - (m_string + 5);
+        if (name_len <= 0 || name_len >= (int)sizeof(name))
+            return BAD_REQUEST;
+        memcpy(name, m_string + 5, name_len);
+        name[name_len] = '\0';
+
+        const char *pw = sep + 8;
+        int pw_len = strlen(pw);
+        if (pw_len >= (int)sizeof(password))
+            return BAD_REQUEST;
+        memcpy(password, pw, pw_len);
+        password[pw_len] = '\0';
 
         if (*(p + 1) == '3')
         {
